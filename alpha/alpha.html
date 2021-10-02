@@ -1,6 +1,6 @@
 <!-- Microinteractions - Alpha Description -->
 <!-- Written by Roger Korpics  -->
-<!-- 29 September 2021  -->
+<!-- 2 October 2021  -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,30 +8,56 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>IDM 241 - Alpha Description</title>
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="alpha-styles.css">
     </head>
     <body> 
         <main>
-            <h1>Hello World</h1>
-
+            <h1>Alpha Description</h1>
+            
             <div id="url">
+                <h2>URL</h2>
                 <a href="http://rkorpics.com/biome/biome-generator.html">Biome Generator Link</a>
             </div>
-
-            <div id="triggers">
-                When loaded into the website, the user will click on (or tap) a button.
+            
+            <div class="grid">
+                
+                <div id="triggers">
+                    <h2>Triggers</h2>
+                    When loaded into the website, the user will use a mouse to click on a button. Alternatively, they may hold down on the click to delay the interaction.
+                </div>
+                
+                <div id="rules">
+                    <h2>Rules</h2>
+                    <ul>
+                        <li>Button shrinks down a few pixels, as if it's being pressed down. Shrink state remains on hold. Button color fades in</li>
+                        <li>On release, button grows to be a bit larger than normal state, but then settles down to normal size – like a recoil. Color fades out, back to border.</li>
+                        <li>Script picks a random adjective and a random noun, and combines the two.</li>
+                    </ul>
+                </div>
+                
+                <div id="feedback">
+                    <h2>Feedback</h2>
+                    <ul>
+                        <li>Button shrinks down a few pixels, as if it's being pressed down. Shrink state remains on hold. Button color fades in</li>
+                        <li>On release, button grows to be a bit larger than normal state, but then settles down to normal size – like a recoil. Color fades out, back to border.</li>
+                    </ul>
+                </div>
+                
+                <div id="loops-and-modes">
+                    <h2>Loops & Modes</h2>
+                    None
+                </div>
             </div>
 
-            <div id="rules">
-                <ul>
-                    <li>Button shifts down a few pixels</li>
-                    <li>Script picks a random adjective and a random noun, and combines the two.</li>
-                </ul>
+            <div id="examples">
+                <h2>Examples</h2>
+                <img src="microinteraction-alpha-storyboard.jpg" alt="four panel storyboard showing the keyframes of the proposed microinteraction">
             </div>
-        
-            <div id="feedback"></div>
-            <div id="loops-and-modes"></div>
-            <div id="examples"></div>
+
+            <footer>
+                <p>Created by Roger Korpics – Fall 2021</p>
+            </footer>
+
         </main>
     </body>
 </html>
