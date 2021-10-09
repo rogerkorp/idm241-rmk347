@@ -146,3 +146,54 @@ main{
     background-color: white;
     max-width: 960px;
 }
+
+/* Alpha Build Rules */
+
+#build{ /* Rules for the DIV container of the interaction*/
+    background-color: white;
+    max-width: 960px;
+    padding: 4em;
+    text-align: center;
+}
+
+#generate-biome{ /* Rules for the button itself */
+    padding: 1em;
+    margin: 1em;
+    font-family: robotobold;
+    font-size: 1.5em;
+    border-radius: 3em;
+    border: .25em solid red;
+    color: red;
+}
+
+#generate-biome:hover{
+    cursor: pointer;
+}
+
+#generate-biome:active{ /* Rules for the button hover state*/
+    animation-name: active;
+    animation-duration: .40s;
+}
+
+@keyframes active{
+    0%, 100% {
+        margin: 1em;
+        padding: 1em;
+        background-color: white;
+        color: red;
+    }
+
+    25% {
+        margin: 1.5em;
+        padding: .50em;
+        background-color: red;
+        color: white;
+    }
+
+    50% {
+        margin: .5em;
+        padding: 1.5em;
+        background-color: red;
+        color: white;
+    }
+}
