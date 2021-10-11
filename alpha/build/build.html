@@ -1,3 +1,7 @@
+<!-- Microinteractions - Alpha Build -->
+<!-- Written by Roger Korpics -->
+<!-- 11 October 2021 -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,35 +10,42 @@
         <title>IDM 241 - Alpha Build</title>
         <link rel="stylesheet" href="/alpha-styles.css">
     </head>
-    <body> 
+    <body id="build-body"> 
         <main>
+
             <h1>Alpha Build</h1>
-            
+
             <div id="build">
                 <button id="generate-biome">Click here!</button>
             </div>
             
             <div class="grid">
-                
                 <div id="triggers">
                     <h2>Triggers</h2>
-                    When loaded into the website, the user will use a mouse to click on a button. Alternatively, they may hold down on the click to delay the interaction.
+                    When loaded into the website, the user will use a mouse to click on a button.
                 </div>
                 
                 <div id="rules">
                     <h2>Rules</h2>
                     <ul>
-                        <li>Button shrinks down a few pixels, as if it's being pressed down. Shrink state remains on hold. Button color fades in</li>
-                        <li>On release, button grows to be a bit larger than normal state, but then settles down to normal size – like a recoil. Color fades out, back to border.</li>
-                        <li>Script picks a random adjective and a random noun, and combines the two.</li>
+                        <li>Script listens for user click.</li>
+                        <li>When click is recognized, the script changes the class of the button to one with animation rules.</li>
+                        <li>The Button then shrinks down a few pixels, as if it's being pressed down</li>
+                        <li>Color of the button begins to fade in.</li>
+                        <li>Button then grows to be a bit larger than normal state, but then settles down to normal size – like a recoil. </li>
+                        <li>Color fades out, back to the same color as the border.</li>
+                        <li>After 400ms, the animation is complete and the script changes the class of the button to a non-existant one – resetting the animation.</li>
                     </ul>
                 </div>
                 
                 <div id="feedback">
                     <h2>Feedback</h2>
                     <ul>
-                        <li>Button shrinks down a few pixels, as if it's being pressed down. Shrink state remains on hold. Button color fades in</li>
-                        <li>On release, button grows to be a bit larger than normal state, but then settles down to normal size – like a recoil. Color fades out, back to border.</li>
+                        <li>When click is recognized, the script changes the class of the button to one with animation rules.</li>
+                        <li>The Button then shrinks down a few pixels, as if it's being pressed down</li>
+                        <li>Color of the button begins to fade in.</li>
+                        <li>Button then grows to be a bit larger than normal state, but then settles down to normal size – like a recoil. 
+                        <li>Color fades out, back to the same color as the border.</li>
                     </ul>
                 </div>
                 
@@ -47,6 +58,7 @@
             <footer>
                 <p>Created by Roger Korpics – Fall 2021</p>
             </footer>
+
         </main>
         <script src="script.js"></script>
     </body>
