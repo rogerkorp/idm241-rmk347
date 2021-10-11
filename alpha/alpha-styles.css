@@ -150,7 +150,7 @@ main{
 /* Alpha Build Rules */
 
 #build{ /* Rules for the DIV container of the interaction*/
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     max-width: 960px;
     padding: 4em;
     text-align: center;
@@ -180,7 +180,7 @@ main{
     0%, 100% {
         margin: 1em;
         padding: 1em;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         color: red;
     }
 
@@ -188,13 +188,13 @@ main{
         margin: 1.5em;
         padding: .50em;
         background-color: red;
-        color: white;
+        color: rgb(255, 255, 255);
     }
 
     50% {
         margin: .5em;
         padding: 1.5em;
         background-color: red;
-        color: white;
+        color: rgb(255, 255, 255);
     }
 }
