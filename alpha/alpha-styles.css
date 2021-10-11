@@ -170,10 +170,11 @@ main{
     cursor: pointer;
 }
 
-#generate-biome:active{ /* Rules for the button hover state*/
+.buttonAnimation{
     animation-name: active;
-    animation-duration: .40s;
+    animation-duration: .4s;
 }
+
 
 @keyframes active{
     0%, 100% {
