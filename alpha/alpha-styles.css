@@ -157,13 +157,14 @@ main{
 }
 
 #generate-biome{ /* Rules for the button itself */
-    padding: 1em;
-    margin: 1em;
-    font-family: robotobold;
-    font-size: 1.5em;
+    background-color: white;
     border-radius: 3em;
     border: .25em solid red;
     color: red;
+    font-family: robotobold;
+    font-size: 1.5em;
+    margin: 1em;
+    padding: 1em;
 }
 
 #generate-biome:hover{
@@ -171,30 +172,30 @@ main{
 }
 
 .buttonAnimation{
-    animation-name: active;
     animation-duration: .4s;
+    animation-name: active;
 }
 
 
 @keyframes active{
     0%, 100% {
-        margin: 1em;
-        padding: 1em;
         background-color: rgb(255, 255, 255);
         color: red;
+        margin: 1em;
+        padding: 1em;
     }
 
     25% {
-        margin: 1.5em;
-        padding: .50em;
         background-color: red;
         color: rgb(255, 255, 255);
+        margin: 1.5em;
+        padding: .50em;
     }
 
     50% {
-        margin: .5em;
-        padding: 1.5em;
         background-color: red;
         color: rgb(255, 255, 255);
+        margin: .5em;
+        padding: 1.5em;
     }
 }
