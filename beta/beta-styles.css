@@ -1,0 +1,140 @@
+/* Microinteractions - Alpha Description & Build Stylesheet*/
+/* Written by Roger Korpics */
+/* 11 October 2021 */
+
+/* Custom Fonts */
+
+@font-face {
+    font-family: 'Renogare';
+    src: url('fonts/Renogare-Regular.woff2') format('woff2'),
+        url('fonts/Renogare-Regular.woff') format('woff'),
+        url('fonts/Renogare-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('fonts/roboto-light-webfont.woff') format('woff'),
+         url('fonts/roboto-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/roboto-lightitalic-webfont.woff') format('woff'),
+         url('fonts/roboto-lightitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('fonts/roboto-bold-webfont.woff') format('woff'),
+         url('fonts/roboto-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold_italic';
+    src: url('fonts/roboto-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/roboto-bolditalic-webfont.woff') format('woff'),
+         url('fonts/roboto-bolditalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* General rules */
+
+
+body{
+    background-color:rgb(255, 255, 255);
+    font-family: robotobold;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+div{
+    border-radius: 1em;
+    box-shadow: inset 7px 7px 10px -5px rgba(69, 108, 109, 0.158);
+    margin: 1em;
+    padding: 1.5em;
+}
+
+footer{
+    text-align: center;
+}
+
+h1{
+    font-family: Renogare;
+    font-size: 3em;
+    line-height: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(235, 88, 88);
+}
+
+h2{
+    color: rgb(42, 127, 177);
+    font-family: renogare;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1em;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 1em;
+    box-shadow: 7px 7px 10px -5px rgba(69, 108, 109, 0.158);
+}
+
+main{
+    margin: auto;
+    max-width: 1024px;
+}
+
+/* Grid template rules */
+
+@media screen and (min-width: 850px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-areas:
+        'triggers rules'
+        'feedback loops-and-modes';
+        max-width: 1024px;
+        overflow: none;
+    }
+}
+
+.grid{
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Specific div rules */
+
+.div-style{
+    background-color: rgba(241, 241, 241, 0.61);
+}
+
+#examples{
+    max-width: 960px;
+}
+
+#url{
+    max-width: 960px;
+}
