@@ -64,11 +64,42 @@ body{
     line-height: 1.5em;
 }
 
+#beta-build{
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+#menu-link:hover{
+    cursor: pointer;
+}
+
+#menu-link{
+    color: blue;
+    font-weight: bold;
+}
+
 div{
     border-radius: 1em;
     box-shadow: inset 7px 7px 10px -5px rgba(69, 108, 109, 0.158);
     margin: 1em;
     padding: 1.5em;
+}
+
+#menu-test{
+    border-radius: 1em;
+    box-shadow: 7px 7px 10px -5px rgba(69, 108, 109, 0.158);
+    padding: 1.5em;
+    margin: auto;
+    max-width: 50em;
+    max-height: 40em;
+}
+
+#menu{
+    background-color: rgb(255, 6, 6);
+    width: 400px;
+    height: 400px;
+    display: none;
 }
 
 footer{
