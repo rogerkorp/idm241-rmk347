@@ -124,6 +124,7 @@ div{
     align-items: center;
     justify-content: center;
     line-height: 3em;
+    margin: 0;
 }
 
 .forwardbox{
