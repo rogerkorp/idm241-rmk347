@@ -8,21 +8,86 @@
     </head>
     <body id="beta-build"> 
         <main>
-            <div id="menu-test">
+            <h1>Beta Build</h1>
+
+        <div class="grid-beta">
+            <div class="div-style" id="menu-test">
                 <a id="menu-link" onclick="menuMode()">Settings</a>
             </div>
-        </main>
-        <div id="menu">
-            <div id="settings">
+            <div class=div-style id="triggers">
+                <h2>Triggers</h2>
+                User clicks on a link.
+            </div>
+            
+            <div class=div-style id="rules">
+                <h2>Rules</h2>
+                <ul>
+                    <u><b>NORMAL MODE TO MENU MODE:</b></u>
+                    <br>
+                    <li>When the user hovers over the link, their cursor will turn into a pointer</li>
+                    <li>When the user clicks that link, it will trigger an onclick event that:</li>
+                        <ul>
+                            <li>Changes the menu display style from "none" to "flex".</li>
+                            <li>Changes the classes for both the menu div and the settings div to ones containing animation rules</li>
+                        </ul>
+                    <li>The background fades into a darker, slightly transparent color</li>
+                    <li>The settings div quickly rises from below, stopping at the center of the screen.</li>
+                    <li>The user can click various checkboxes to apply different settings</li>
+                    <br>
+                    <u><b>MENU MODE TO NORMAL MODE:</b></u>
+                    <li>User hovers over the Finish button. The background color of the button darkens out a bit, and the user's cursor will turn into a pointer</li>
+                    <li>When the user clicks the button, it will trigger an onclick event that:</li>
+                    <ul>
+                        <li>Changes the classes for both the menu div and the settings div to ones containing new animation rules</li>
+                        <li>Activates a delayed function that will change the menu style from "flex" to "none" after the animations have played out in thier entirety</li>
+                    </ul>
+                    <li>The background fades back into one that's fully transparent</li>
+                    <li>The settings div quickly falls beneath the screen.</li>
+                </ul>
+            </div>
+            
+            <div class=div-style id="feedback">
+                <h2>Feedback</h2>
+                <ul>
+                    <u><b>NORMAL MODE TO MENU MODE:</b></u>
+                    <br>
+                    <li>When the user hovers over the link, their cursor will turn into a pointer</li>
+                    <li>The background fades into a darker, slightly transparent color</li>
+                    <li>The settings div quickly rises from below, stopping at the center of the screen.</li>
+                    <li>The user can click various checkboxes to apply different settings</li>
+                    <br>
+                    <u><b>MENU MODE TO NORMAL MODE:</b></u>
+                    <li>User hovers over the Finish button. The background color of the button darkens out a bit, and the user's cursor will turn into a pointer</li>
+                    <li>The background fades back into one that's fully transparent</li>
+                    <li>The settings div quickly falls beneath the screen.</li>
+                </ul>
+            </div>
+            
+            <div class=div-style id="loops-and-modes">
+                <h2>Loops & Modes</h2>
+                <ul>
+                    <li>Menu Mode allows user to tweak word generation, but doesn't allow the user to generate a word until they exit out.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+        <div id="menu" class="background-darken">
+            <div id="settings" class="forwardbox">
                 <form id="checks">
                     <input type="checkbox" id="no-adjectives" name="no-adjectives">
                     <label for="no-adjectives">Only Generate Geological Features</label><br>
                     <input type="checkbox" id="no-geology" name="no-geology">
                     <label for="no-adjectives">Only Generate Adjectives</label><br>
-                    <input type="submit" id="submit" value="Submit" onclick="menuMode()">
+                    <input type="button" id="submit" value="Finish" onclick="menuMode()">
                 </form>
             </div>
         </div>
+
+        <footer>
+            <p>Created by Roger Korpics – Fall 2021</p>
+        </footer>
+
         <script src="beta-script.js"></script>
     </body>
 </html>
