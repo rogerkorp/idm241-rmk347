@@ -260,18 +260,6 @@ main{
 
 /* Grid template rules */
 
-@media screen and (min-width: 850px) {
-    .grid{
-        display: grid;
-        grid-template-columns: repeat(2,50%);
-        grid-template-areas:
-        'triggers rules'
-        'feedback loops-and-modes';
-        max-width: 1024px;
-        overflow: none;
-    }
-}
-
 .grid{
     box-shadow: none;
     margin: 0;

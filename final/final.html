@@ -23,52 +23,73 @@
                 
                 <div class=div-style id="triggers">
                     <h2>Triggers</h2>
-                    User clicks on a small button.
+                    <ul>
+                    <li>User hovers over an interactable element.</li>
+                    <li>User clicks on a link</li>
+                    <li>User clicks on a button.</li>
+                    </ul>
+
                 </div>
                 
                 <div class=div-style id="rules">
                     <h2>Rules</h2>
                     <ul>
-                        <u><b>NORMAL MODE TO MENU MODE:</b></u>
-                        <li>User hovers over link/button</li>
-                        <li>On click, the enu rises slowly from the bottom of the screen, revealing new options for the user.</li>
-                        <li>Background darkens so that the user's focus is on the menu</li>
-                        <li>Mode switches from "normal" to "menu" to preserve the endstate of the animation.</li>
-                        <br>
-                        <u><b>MENU MODE TO NORMAL MODE:</b></u>
-                        <li>User hovers over a cross / exit button</li>
-                        <li>User clickes the button</li>
-                        <li>Mode switches from "menu" to "normal".</li>
-                        <li>The animation reverses.</li>
+                        <li>Whenever the user hovers over an interactable element, thier cursor changes to a pointer.</li>
+                    <br>
+                    <u><b>MENU MODE RULES:</b></u>
+                        <li>If the user clicks on the link labeled "settings", then they will enter menu mode</li>
+                        <li>Script changes the class and display style of the menu div.</li>
+                        <li>Script changes the class and display style of a div located behind the menu.</li>
+                        <li>The menu starts moving up from the bottom off screen, and then settles in at the center.</li>
+                        <li>The background div fades in, resulting in the content underneath the menu to appear darker.</li>
+                        <li>User can click on and enable checkboxes that correspond to script settings</li>
+                        <li>To exit out and revert back to normal mode the user can click on either a submit button or a cross symbol.</li>
+                        <li>If the user chooses to click the cross, then the settings will not be applied to the calculation</li>
+                        <li>If the user chooses to click the submit button, then the settings will be applied.</li>
+                        <li>While reverting back to normal mode, both the menu and background divs will be given thier original classes and display styles</li>
+                        <li>The menu sinks below the screen, and the background lightens back up </li>
+                    <br>
+                    <u><b>SUBMIT BUTTON RULES:</b></u>
+                        <li>If the user clicks on the submit button, the button will play out a growth and shrinking animation</li>
+                        <li>On click, the submit button will be given a new class and then – after its animation plays out – it will automatically revert back to it's original class.</li>
+                        <li>A breif tone will play to indicate that a calculation was made.</li>
+                        <li>After the event occurs, the script will run through a calculation based on the applied settings</li>
+                        <li>When the calculation determines the variable that needs to be returned, it will print out the result inside the console log</li> 
                     </ul>
                 </div>
                 
                 <div class=div-style id="feedback">
                     <h2>Feedback</h2>
                     <ul>
-                        <u><b>NORMAL MODE TO MENU MODE:</b></u>
-                        <li>User hovers over link/button</li>
-                        <li>On click, the enu rises slowly from the bottom of the screen, revealing new options for the user.</li>
-                        <li>Background darkens so that the user's focus is on the menu</li>
+                        <li>Whenever the user hovers over an interactable element, thier cursor changes to a pointer.</li>
                         <br>
-                        <u><b>MENU MODE TO NORMAL MODE:</b></u>
-                        <li>User hovers over a cross / exit button</li>
-                        <li>User clickes the button</li>
-                        <li>The animation reverses.</li>
+                    <u><b>MENU MODE FEEDBACK:</b></u>
+                        <li>If the user clicks on the link labeled "settings", then they will enter menu mode</li>
+                        <li>The menu starts moving up from the bottom off screen, and then settles in at the center.</li>
+                        <li>The background div fades in, resulting in the content underneath the menu to appear darker.</li>
+                        <li>User can click on and enable checkboxes that correspond to script settings</li>
+                        <li>To exit out and revert back to normal mode the user can click on either a submit button or a cross symbol.</li>
+                        <li>While reverting back to normal mode the animation reverses: the menu sinks below the screen, and the background lightens back up </li>
+                    <br>
+                    
+                    <u><b>SUBMIT BUTTON FEEDBACK:</b></u>
+                        <li>If the user clicks on the submit button, the button will play out a growth and shrinking animation</li>
+                        <li>A breif tone will play to indicate that a calculation was made.</li>
+                        <li>The result of the calculation prints out intothe console log</li> 
                     </ul>
                 </div>
                 
                 <div class=div-style id="loops-and-modes">
                     <h2>Loops & Modes</h2>
                     <ul>
-                        <li>Menu Mode allows user to tweak word generation, but doesn't allow the user to generate a word until they exit out.</li>
+                        <li>Menu Mode allows user to tweak word calculation, but doesn't allow the user to run the calculation until they revert back to normal mode.</li>
                     </ul>
                 </div>
             </div>
 
             <div class=div-style id="examples">
                 <h2>Examples</h2>
-                <img src="microinteraction-beta-storyboard.jpg" alt="four panel storyboard showing the keyframes of the proposed microinteraction">
+                <img src="final-storyboard.png" alt="an eight panel storyboard detailing the final microinteraction">
             </div>
 
             <footer>
