@@ -1,0 +1,308 @@
+/* Microinteractions - Alpha Description & Build Stylesheet*/
+/* Written by Roger Korpics */
+/* 15 November 2021 */
+
+/* Custom Fonts */
+
+@font-face {
+    font-family: 'Renogare';
+    src: url('fonts/Renogare-Regular.woff2') format('woff2'),
+        url('fonts/Renogare-Regular.woff') format('woff'),
+        url('fonts/Renogare-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('fonts/roboto-light-webfont.woff') format('woff'),
+         url('fonts/roboto-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/roboto-lightitalic-webfont.woff') format('woff'),
+         url('fonts/roboto-lightitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('fonts/roboto-bold-webfont.woff') format('woff'),
+         url('fonts/roboto-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold_italic';
+    src: url('fonts/roboto-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/roboto-bolditalic-webfont.woff') format('woff'),
+         url('fonts/roboto-bolditalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* General Element rules */
+
+a{
+    text-decoration: underline;
+
+}
+
+
+body{
+    background-color:rgb(208, 238, 229);
+    font-family: robotobold;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: rgb(0, 29, 43);
+}
+
+div{
+    border-radius: .5em;
+    box-shadow: 7px 7px 15px -3px rgba(134, 134, 134, 0.158);
+    margin: .75em;
+    padding: 1.5em;
+}
+
+footer{
+    text-align: center;
+}
+
+h1{
+    color: rgb(0, 29, 43);
+    font-family: Renogare;
+    font-size: 3em;
+    line-height: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2{
+    color: rgb(10, 90, 110);
+    font-family: renogare;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1em;
+    margin-top: 0;
+    padding-bottom: .5em;
+    text-transform: uppercase;
+    border-bottom: .1em solid rgb(195, 219, 207);
+
+}
+
+img{
+    max-width: 100%;
+    border-radius: 1em;
+    box-shadow: 7px 7px 10px -5px rgba(69, 108, 109, 0.158);
+}
+
+main{
+    margin: auto;
+    max-width: 1024px;
+}
+
+/* Class-level Rules */
+
+.background-darken{
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-name: background-darken;
+}
+
+.background-lighten{
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-name: background-lighten;
+}
+
+.forwardbox{
+    animation-duration: .5s;
+    animation-name: settings-rise;
+}
+
+.reversebox{
+    animation-duration: .5s;
+    animation-name: settings-fall;
+}
+
+/* ID Level Rules */
+
+#beta-build{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#menu{
+    align-items: center;
+    border-radius: 0;
+    bottom: 0;
+    box-shadow: none;
+    display: none;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+}
+
+#menu-link{
+    color:rgb(90, 154, 214);
+    font-weight: bold;
+}
+
+#menu-link:hover{
+    cursor: pointer;
+}
+
+#menu-test{
+    border-radius: 1em;
+    box-shadow: 7px 7px 10px -5px rgba(69, 108, 109, 0.158);
+    max-height: 40em;
+    max-width: 1000px;
+    padding: 1.5em;
+}
+
+#settings{
+    align-items: center;
+    background: white;
+    border-radius: 16px;
+    box-shadow: none;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    line-height: 3em;
+    margin: 0;
+    max-height: 20em;
+    max-width: 30em;
+    overflow: hidden;
+    padding: 0em;
+    position: absolute;
+    width: 100%;
+}
+
+
+#submit{
+    background-color: rgb(42, 127, 177);
+    border-radius: 32px;
+    border: none;
+    bottom: 0;
+    color: white;
+    font-weight: bold;
+    margin: 1em;
+    padding: 1em;
+    transition: background-color .25s;
+}
+
+
+#submit:hover{
+    background-color: rgb(16, 56, 80);
+    cursor: pointer;
+}
+
+/* Animation Keyframes */
+
+
+@keyframes background-darken{
+    0%{
+        background-color:rgba(0, 0, 0, 0);
+    }
+    100%{
+        background-color:rgba(0, 0, 0, 0.233);
+    }
+}
+
+@keyframes background-lighten{
+    0%{
+        background-color:rgba(0, 0, 0, 0.233);
+    }
+    
+    100%{
+        background-color:rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes settings-rise{
+    0%{
+        margin-top: 150vh
+    }
+    100%{
+        margin-top: 2vh;
+    }
+}
+
+
+@keyframes settings-fall{
+    0%{
+        margin-top: 2vh;
+    }
+   
+    100%{
+        margin-top: 150vh
+    }
+}
+
+
+/* Grid template rules */
+
+@media screen and (min-width: 850px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-areas:
+        'triggers rules'
+        'feedback loops-and-modes';
+        max-width: 1024px;
+        overflow: none;
+    }
+}
+
+.grid{
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-beta{
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Specific div rules */
+
+.div-style{
+    background-color: rgb(255, 255, 255);
+}
+
+.div-style ul{
+    text-align: left;
+}
+
+.div-style b{
+    font-size: 1.25em;
+}
+
+#examples{
+    max-width: 960px;
+}
+
+#url{
+    max-width: 960px;
+}
