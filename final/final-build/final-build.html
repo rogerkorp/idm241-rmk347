@@ -8,14 +8,17 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>IDM 241 - Final Description</title>
-        <link rel="stylesheet" href="final-styles.css">
+        <link rel="stylesheet" href="../../final-styles.css">
     </head>
-    <body> 
+    <body>
+        <audio id="submitM4A" src="sounds/submit.m4a" preload="auto"></audio>
+        <audio id="confirmM4A" src="sounds/confirm.m4a" preload="auto"></audio>
         <main>
             <h1>Final Description</h1>
             
-                <div id="button-build">
+                <div id="button-build" class="div-style">
                     <button id="generate-biome">Click here!</button>
+                    <a id="menu-link" onclick="menuClose()">Settings</a>
                 </div>
             
             <div class="grid">
@@ -86,9 +89,25 @@
                 </div>
             </div>
 
-            <div class=div-style id="examples">
-                <h2>Examples</h2>
-                <img src="final-storyboard.png" alt="an eight panel storyboard detailing the final microinteraction">
+            <div id="menu" class="background-darken">
+                <div id="settings" class="forwardbox">
+                    <div id="cross" onclick="menuClose()">
+                        <div class="cross-line" id="cross-left"></div>
+                        <div class="cross-line" id="cross-right"></div>
+                    </div>
+                    <h2>Settings</h2>
+                    <form id="checks">
+                        <input type="checkbox" id="no-adjectives" name="no-adjectives">
+                        <label for="no-adjectives">Don't Generate Adjectives</label>
+                        <br>
+                        <input type="checkbox" id="no-geology" name="no-geology">
+                        <label for="no-geology">Don't Generate Geological Features</label>
+                        <br>
+                        <div id="submit-button">
+                        <input type="button" id="submit" value="Finish" onclick="menuSubmit()">
+                        </div>
+                    </form>
+                </div>
             </div>
 
             <footer>
