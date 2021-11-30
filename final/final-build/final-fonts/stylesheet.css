@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Renogare';
+    src: url('Renogare-Regular.woff2') format('woff2'),
+        url('Renogare-Regular.woff') format('woff'),
+        url('Renogare-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Renogare';
+    src: url('Renogare-Regular_1.woff2') format('woff2'),
+        url('Renogare-Regular_1.woff') format('woff'),
+        url('Renogare-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

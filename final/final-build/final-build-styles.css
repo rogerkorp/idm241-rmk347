@@ -1,0 +1,444 @@
+/* Microinteractions - Final Build Stylesheet*/
+/* Written by Roger Korpics */
+/* 29 November 2021 */
+
+/* Custom Fonts */
+
+@font-face {
+    font-family: 'Renogare';
+    src: url('final-fonts/Renogare-Regular.woff2') format('woff2'),
+        url('final-fonts/Renogare-Regular.woff') format('woff'),
+        url('final-fonts/Renogare-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('final-fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('final-fonts/roboto-light-webfont.woff') format('woff'),
+         url('final-fonts/roboto-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('final-fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
+         url('final-fonts/roboto-lightitalic-webfont.woff') format('woff'),
+         url('final-fonts/roboto-lightitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('final-fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('final-fonts/roboto-bold-webfont.woff') format('woff'),
+         url('final-fonts/roboto-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold_italic';
+    src: url('final-fonts/roboto-bolditalic-webfont.woff2') format('woff2'),
+         url('final-fonts/roboto-bolditalic-webfont.woff') format('woff'),
+         url('final-fonts/roboto-bolditalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaythin_italic';
+    src: url('final-fonts/raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('final-fonts/raleway-italic-variablefont_wght-webfont.woff') format('woff'),
+         url('final-fonts/raleway-italic-variablefont_wght-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('final-fonts/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('final-fonts/raleway-variablefont_wght-webfont.woff') format('woff'),
+         url('final-fonts/raleway-variablefont_wght-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('final-fonts/raleway-light.woff2') format('woff2'),
+         url('final-fonts/raleway-light.woff') format('woff'),
+         url('final-fonts/raleway-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* General Element rules */
+
+a {
+    text-decoration: underline;
+
+}
+
+
+body{
+    background-color:rgb(208, 238, 229);
+    font-family: robotobold;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: rgb(0, 29, 43);
+    margin: 0;
+}
+
+div{
+    border-radius: .5em;
+    box-shadow: 7px 7px 15px -3px rgba(134, 134, 134, 0.158);
+    margin: .75em;
+    padding: 1.5em;
+}
+
+footer{
+    text-align: center;
+}
+
+h1{
+    color: rgb(0, 29, 43);
+    font-family: Renogare;
+    font-size: 3em;
+    line-height: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2{
+    color: rgb(10, 90, 110);
+    font-family: renogare;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1em;
+    margin-top: 0;
+    padding-bottom: .5em;
+    text-transform: uppercase;
+    border-bottom: .1em solid rgb(195, 219, 207);
+
+}
+
+img{
+    max-width: 100%;
+    border-radius: 1em;
+    box-shadow: 7px 7px 10px -5px rgba(69, 108, 109, 0.158);
+}
+
+main{
+    margin: auto;
+}
+
+/* Class-level Rules */
+
+.background-darken{
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-name: background-darken;
+}
+
+.background-lighten{
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-name: background-lighten;
+}
+
+.div-style{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.forwardbox{
+    animation-duration: .5s;
+    animation-name: settings-rise;
+}
+
+.reversebox{
+    animation-duration: .5s;
+    animation-name: settings-fall;
+}
+
+/* ID Level Rules */
+
+#beta-build{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#menu{
+    align-items: center;
+    border-radius: 0;
+    bottom: 0;
+    box-shadow: none;
+    display: none;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    font-family: ralewaylight;
+}
+
+#menu-link{
+    color:rgb(74, 156, 194);
+    font-weight: bold;
+    position: bottom;
+    font-family: ralewaylight;
+    font-weight: 500;
+}
+
+#menu-link:hover{
+    cursor: pointer;
+}
+
+#menu-test{
+    border-radius: 1em;
+    box-shadow: 7px 7px 10px -5px rgba(69, 108, 109, 0.158);
+    max-height: 40em;
+    max-width: 1000px;
+    padding: 1.5em;
+}
+
+#submit-button{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: none;
+}
+
+#cross{
+    align-self: left;
+    justify-self: left;
+    position: absolute;
+    left: 1em;
+    top: 1.5em;
+    border-radius: 0;
+    margin: 0;
+    padding: 1em;
+    box-shadow: none;
+    width: 1em;
+    height: 1em;
+}
+
+#cross:hover{
+    cursor: pointer;
+    transition: background-color .25s;
+}
+
+.cross-line{
+    width: 2em;
+    height: .25em;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(10, 90, 110);
+    border-radius: 0;
+}
+
+
+
+#cross-left{
+    transform: rotate(45deg);
+    position: relative;
+    top: .235em;
+}
+
+#cross-right{
+    transform: rotate(-45deg);
+}
+
+#settings{
+    align-items: center;
+    background: white;
+    border-radius: 16px;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    line-height: 3em;
+    margin: 0;
+    max-height: 20em;
+    max-width: 30em;
+    overflow: hidden;
+    padding: 0em;
+    position: absolute;
+    width: 100%;
+}
+
+
+#submit{
+    background-color: rgb(10, 90, 110);
+    border-radius: 32px;
+    border: none;
+    bottom: 0;
+    color: white;
+    margin: 1em;
+    padding: 1em;
+    transition: background-color .25s;
+    font-size: 1em;
+    font-family: renogare;
+    text-transform: uppercase;
+}
+
+
+#submit:hover{
+    background-color: rgb(3, 31, 49);
+    cursor: pointer;
+}
+
+/* Animation Keyframes */
+
+
+@keyframes background-darken{
+    0%{
+        background-color:rgba(0, 0, 0, 0);
+    }
+    100%{
+        background-color:rgba(0, 0, 0, 0.233);
+    }
+}
+
+@keyframes background-lighten{
+    0%{
+        background-color:rgba(0, 0, 0, 0.233);
+    }
+    
+    100%{
+        background-color:rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes settings-rise{
+    0%{
+        margin-top: 150vh
+    }
+    100%{
+        margin-top: 2vh;
+    }
+}
+
+
+@keyframes settings-fall{
+    0%{
+        margin-top: 2vh;
+    }
+   
+    100%{
+        margin-top: 150vh
+    }
+}
+
+
+/* Grid template rules */
+
+.grid{
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-beta{
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Specific div rules */
+
+.div-style{
+    background-color: rgb(255, 255, 255);
+}
+
+.div-style ul{
+    text-align: left;
+}
+
+.div-style b{
+    font-size: 1.25em;
+}
+
+#examples{
+    max-width: 960px;
+}
+
+#url{
+    max-width: 960px;
+}
+
+/* Alpha Build Rules */
+
+#button-build{ /* Rules for the DIV container of the interaction*/
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#generate-biome{ /* Rules for the button itself */
+    background-color: white;
+    border-radius: 3em;
+    border: .25em solid rgb(10, 90, 110);
+    color: rgb(10, 90, 110);;
+    font-family: renogare;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin: 1em;
+    padding: 1em;
+}
+
+#generate-biome:hover{
+    cursor: pointer;
+}
+
+.buttonAnimation{
+    animation-duration: .4s;
+    animation-name: active;
+}
+
+
+
+@keyframes active{
+    0%, 100% {
+        background-color: rgb(255, 255, 255);
+        color: rgb(10, 90, 110);;
+        margin: 1em;
+        padding: 1em;
+    }
+
+    25% {
+        background-color: rgb(10, 90, 110);
+        color: rgb(255, 255, 255);
+        margin: 1.5em;
+        padding: .50em;
+    }
+
+    50% {
+        background-color: rgb(10, 90, 110);
+        color: rgb(255, 255, 255);
+        margin: .5em;
+        padding: 1.5em;
+    }
+}

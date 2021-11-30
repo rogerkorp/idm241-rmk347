@@ -1,23 +1,23 @@
-<!-- Microinteractions - Beta Description -->
+<!-- Microinteractions - Final Build -->
 <!-- Written by Roger Korpics  -->
-<!-- 15 November 2021  -->
+<!-- 29 November 2021  -->
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>IDM 241 - Final Description</title>
-        <link rel="stylesheet" href="../../final-styles.css">
+        <title>IDM 241 - Final Build</title>
+        <link rel="stylesheet" href="final-build-styles.css">
     </head>
     <body>
-        <audio id="submitM4A" src="sounds/submit.m4a" preload="auto"></audio>
-        <audio id="confirmM4A" src="sounds/confirm.m4a" preload="auto"></audio>
+        <audio id="submitM4A" src="final-sounds/submit.mp3" preload="auto"></audio>
+        <audio id="confirmM4A" src="final-sounds/confirm.mp3" preload="auto"></audio>
         <main>
             <h1>Final Description</h1>
             
                 <div id="button-build" class="div-style">
-                    <button id="generate-biome">Click here!</button>
+                    <button id="generate-biome" onclick="playSubmit()">Click here!</button>
                     <a id="menu-link" onclick="menuClose()">Settings</a>
                 </div>
             
@@ -47,7 +47,7 @@
                         <li>User can click on and enable checkboxes that correspond to script settings</li>
                         <li>To exit out and revert back to normal mode the user can click on either a submit button or a cross symbol.</li>
                         <li>If the user chooses to click the cross, then the settings will not be applied to the calculation</li>
-                        <li>If the user chooses to click the submit button, then the settings will be applied.</li>
+                        <li>If the user chooses to click the submit button, then the settings will be applied, and a confirmation tone will play.</li>
                         <li>While reverting back to normal mode, both the menu and background divs will be given thier original classes and display styles</li>
                         <li>The menu sinks below the screen, and the background lightens back up </li>
                     <br>
@@ -56,7 +56,7 @@
                         <li>On click, the submit button will be given a new class and then – after its animation plays out – it will automatically revert back to it's original class.</li>
                         <li>A breif tone will play to indicate that a calculation was made.</li>
                         <li>After the event occurs, the script will run through a calculation based on the applied settings</li>
-                        <li>When the calculation determines the variable that needs to be returned, it will print out the result inside the console log</li> 
+                        <li>When the calculation determines the variable that needs to be returned, it will print out the result inside the console log.</li> 
                     </ul>
                 </div>
                 
@@ -71,13 +71,14 @@
                         <li>The background div fades in, resulting in the content underneath the menu to appear darker.</li>
                         <li>User can click on and enable checkboxes that correspond to script settings</li>
                         <li>To exit out and revert back to normal mode the user can click on either a submit button or a cross symbol.</li>
+                        <li>If the user chooses to press the submit button, a breif tone will play.</li>
                         <li>While reverting back to normal mode the animation reverses: the menu sinks below the screen, and the background lightens back up </li>
                     <br>
                     
                     <u><b>SUBMIT BUTTON FEEDBACK:</b></u>
                         <li>If the user clicks on the submit button, the button will play out a growth and shrinking animation</li>
                         <li>A breif tone will play to indicate that a calculation was made.</li>
-                        <li>The result of the calculation prints out intothe console log</li> 
+                        <li>The result of the calculation prints out into the console log (Captial Y for "YES", lowercase n for "NO")</li> 
                     </ul>
                 </div>
                 
@@ -115,6 +116,6 @@
             </footer>
 
         </main>
-        <script src="script.js"></script>
+        <script src="final-script.js"></script>
     </body>
 </html>
