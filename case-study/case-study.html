@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Microinteractions - Case Study</title>
+        <link rel="stylesheet" href="case-study-styles.css">
+    </head>
+    <body> 
+        <main>
+            <h1>Microinteractions - Case Study</h1>
+            <div id="hero-images">
+                <img src="hero-image-1.png" class="hero">
+                <img src="hero-image-2.png" class="hero">
+            </div>
+            <h2>Overview</h2>
+                <p>
+                    For my final project I rebuilt a simple microinteraction I created using HTML, CSS and JavaScript. 
+                    The original microinteraction – a "biome generator" I wrote during the Summer of 2021 – was a relatively barebones website that generates two random words based on a pre-written list.
+                    The interface consisted of a button that – when pressed – runs through the script and chooses the words, and a settings menu that allowed for minimal user customization on the calculator.
+                    For this project, I wanted to give the website a full redesign with a new, more satisfying to use interface with meaningful microinteractions and a cleaner aesthetic.
+                    The result was a product that featured a reworked and lively submit button redesign, and a smooth menu transition that would rise from the bottom of the screen.
+                </p>
+            <h2>Context and Challenges</h2>
+                <p>The idea to redesign the biome generator came from two places.</p>
+                <p>
+                    First: I wanted a website that featured a relatively simple interaction that I could not only feasibly recreate, but ideally <i>expand</i> upon with some personal experimentation.
+                    At the time I was still learning JavaScript, so I wanted to give myself an excuse to really explore beyond the basics.
+                </p>
+                <p>
+                    And Second: I wanted fix an older project that wasn't <i>quite</i> ready for entry into my portfoilo, but still had the potential to be a great piece.
+                    I wanted to be resourceful, and decided to recycle some older code that I wasn't happy with in hope that I could seriously work on it and make it into something I was proud of.
+                    My main issues with the biome generator revolved around its simplicity and it's tacky appearance.
+                    The original was a one-trick pony that had no features outside of pressing a button and seeing what would happen.
+                    It bore a design reminicent of US highway signage, sporting a primarily green color palette in combination with the Interstate typeface.
+                    It was fine for practice, but it was still nothing that I would show to a potential employer.
+                </p>
+                <p>
+                   Ultimately, my metric for success was whether or not my professor would give me an "A" grade for the term.
+                   I understand that it's hardly the most scientific criteria for success, but in the case of a self-centered design I felt that it was good enough to use.
+                </p>
+                <p>
+                    Forthe  project timeline – while I had ten weeks in total to complete the assignment – my development process still needed to account for three deliverables that my professor wanted to see:
+                    <ol>
+                        <li>A simple Alpha interaction by Week 3, which in this case was the animation for the submit button.</li>
+                        <li>A more complicated Beta interaction by Week 6, which consisted of the settings menu I animated and designed</li>
+                        <li>And the Final by Week 10, which needed to not only combine the Alpha and the Beta, but also needed to add styles, sound effects, and have the console log actually update variables based on the users choices in the menu</li>
+                    </ol>
+                </p>
+
+            <h2>Process and Insights</h2>
+            <p>
+                My design process was broken up into three key phases: Designing the button, designing the menu, and then designing a solution that would combine the two into one final deliverable.
+            </p>
+            <p>
+                For the Alpha interaction, I wanted to create a playful animation that would indicate to the user that their input was recieved.
+                The idea was to have the virtual button react like an analog button, with a "recoil" animation that would play when clicked on.
+            </p>
+            <img src="alpha-sketch.jpg">
+            <p>My rational for going in this direction was that a recoil would give the animation a fun "bounce" to it that I felt satisfied the "playful" requirement.
+                Scripting the animation was fairly tricky to figure out.
+                I needed to use a class-swapping technique I researched on the internet in order to get the animation to play out properly, otherwise the interaction would only play-through once.
+                In addition, I also needed to get the timing correct since the method I chose revolved around a swap that occured once the animation had played out in full.
+                This means that if the animation was slowed down or sped up, the reset wouldn't occur at the right moment.
+            </p>
+            <p>
+                For the Beta interaction, I wanted to have a fairly basic settings page that transitioned smoothly from one mode into the next.
+            </p>
+            <img src="beta-sketch.jpg">
+            <p>
+                For the most part, this interaction was primarily based on an old menu design I wrote up for another JavaScript project I took about a few months ago.
+                The main challenge here was creating a responsive transition animation that would work on any screen size.
+                The solution revolved around using <b>view-height units (vh's)</b> on the top-margin, which would push the div containing the settings off and on screen.
+                This was because the view-width was already responsive, since the div had a "max-width" rule written in place would would allow it to shrink if it got too close to the edge of the screen – however, when using percentiles the div would never properly land in the center of the screen on mobile.
+                The issue was that mobile devices are usually taller than they are wider, so the animation needed to account for exceptionally tall aspect ratios.
+            </p>
+            <p>
+                With the Alpha and the Beta built, it was time to turn the two into a final project.
+                Both the Alpha and the Beta had purposefully different variable names and classes, so that combining them into one file caused no conflicts.
+                The main challenge with the final build was finding a way to incorperate meaningful sound effects into it.
+                Instead of searching online for the sounds, I used GarageBand to produce the simple tones myself, creating a basic confirmation and submission sound that would match well with the visuals on screen.
+                Getting the sounds to play in the browser was also a bit tricky since I needed to ensure that it wouldn't trigger an autoplay error when activated, which I resolved by simply tying a function to play the sounds to a form submission button. 
+            </p>
+            <h2>The Solution</h2>
+            <a href="http://rkorpics.com/idm241/final-build.html">This is the final result.</a>
+            <p>
+                The product is a complex microinteraction that's broken up into two parts.
+                The first is the "Click Here" button, which will play out a breif animation, a tone, and print out a result in the browser's console log based on the settings the user applied.
+                The second is the settings link, which will pull up a menu that will allow the user to either modify the settings applied to the generator or simply exit out with no changes.
+                Both the button and the menu are fully responsive.
+            </p>
+
+            <h2>The Results</h2>
+            <p>
+                As of writing this, I have no clue how well I did on the assignment.
+                I will update this with the results of my final, but for now I will just leave you with my personal feelings.
+                Overall, I'm proud of the work I accomplished in these microinteractions. 
+                I still haven't integrated them into my biome generator, but after I get the results back I'll see what needs to be fixed, and push it into the final release.
+                My biggest takeaway from this project was how seemingly complicated interactions on the internet are actually a lot simpiler than they appear.
+                Most of the time they use the building blocks we're already fairly familiar with, and that makes me excited since that means that I have the tools to build enjoyable experiences on the web – and that all I have to do now is get creative with it.
+            </p>
+        </main>
+        <footer>
+            Created by Roger Korpics. IDM-241. Fall 2021.
+        </footer>
+    </body>
+</html>
